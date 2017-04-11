@@ -1,6 +1,6 @@
-function isEven(firstNumber)
+function isEven()
 {
-  console.log(firstNumber);
+  var firstNumber = document.getElementById("firstNumber").value;
   if (firstNumber%2 === 0)
   {
     alert("true");
@@ -12,30 +12,23 @@ function isEven(firstNumber)
   }
 }
 
-function factorial(secondNumber)
+function factorial()
 {
-  var y = 1;
-  // if (secondNumber != 0)
-  // {
-  //   for (var i = 1; i <= secondNumber; i++)
-  //   {
-  //     y = i * y;
-  //   }
-  //   console.log("przed y");
-  //   alert(y+"cos ze srodka");
-  //   return y+"cos ze srodka";
-  //   console.log("po forze");
-  // }
-  // else
-  // {
-  //
-  //   alert("chyba 1");
-  //   return "chyba 1";
-  // }
-  for (var i = 2; i <= secondNumber; i++)
+  var x = 1;
+  var y = document.getElementById("secondNumber").value;
+  if (y != 0)
   {
-    y = y*i;
+    for (i = 1; i <= y; i++)
+    {
+      x = i * x;
+    }
+    alert(x);
+    return x;
   }
-  alert(y);
-  return y;
+  else
+  {
+
+    alert("1");
+    return "1";
+  }
 }
