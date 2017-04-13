@@ -27,8 +27,30 @@ function factorial()
   }
   else
   {
-
     alert("1");
     return "1";
+  }
+}
+
+function kebabToSnake()
+{
+  var x = document.getElementById("string").value;
+  if(x.indexOf("-") === -1 || x.length < 3 || x[0] === "-" || x[x.length-1] === "-")
+  {
+    alert("Kebab-cased string has to have at least 2 letters and - in middle!");
+  }
+  else
+  {
+    for (i = 0; i < x.length; i++)
+    {
+      if(x[i] === "-")
+      {
+        var a = x.slice(0, i);
+        var b = x.slice(i+1);
+        x = a+"_"+b;
+        alert(x);
+        i = x.lenght;
+      }
+    }
   }
 }
