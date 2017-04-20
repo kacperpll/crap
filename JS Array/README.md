@@ -1,1 +1,1 @@
-Small projects for practice.
+Small exercises with arrays in JS.
