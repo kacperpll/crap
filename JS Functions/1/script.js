@@ -31,8 +31,7 @@ function factorial()
     return "1";
   }
 }
-
-function kebabToSnake()
+Lfunction kebabToSnake()
 {
   var x = document.getElementById("string").value;
   if(x.indexOf("-") === -1 || x.length < 3 || x[0] === "-" || x[x.length-1] === "-")
