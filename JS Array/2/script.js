@@ -13,10 +13,10 @@ function printReverse(arr)
 
 function isUniform(arr)
 {
-  var sprawdz = 1;
+  var first = arr[0];
   for (var i = 0; i <= arr.length-2; i++)
   {
-    if (arr[i]===arr[i+1])
+    if (first===arr[i+1])
     {
       sprawdz = 1;
     }
@@ -27,13 +27,26 @@ function isUniform(arr)
   }
   if (sprawdz === 1)
   {
-    console.log("true");
+    return true;
   }
   else
   {
-    console.log("false");
+    return false;
   }
 }
+
+// SOLUTION FROM COURSE
+// function isUniform(arr)
+// {
+//   var first = arr[0];
+//   for (var i = 0; i <arr.length; i++) {
+//     if (arr[i] !== first) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
 function sumArray(arr)
 {
   var wynik = 0;
