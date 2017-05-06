@@ -1,1 +1,1 @@
-Small exercises with objects in JS.
+Array with movieList in JS.
