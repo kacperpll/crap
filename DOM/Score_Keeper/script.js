@@ -24,6 +24,7 @@ function addPlayerTwo() {
 function reset(){
   scoreOne = scoreTwo = 0;
   // scoreTwo = 0;
+  
   document.querySelector("#first").textContent = scoreOne;
   document.querySelector("#second").textContent = scoreTwo;
   document.querySelector("#in").value = null;
