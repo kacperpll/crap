@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="script.js"></script>
+    <style media="screen">
+      .green
+      {
+        color: green;
+      }
+    </style>
+    <title>Score Keeper</title>
+  </head>
+  <body>
+    <h1><span id="first">0</span> to <span id="second">0</span></h1>
+    <h3>Playing to: 5</h3>
+    <input type="number" oninput="points()" id="in" name="quantity" min="1" max="99">
+    <button type="button" onclick="addPlayerOne()" name="button">Player One</button>
+    <button type="button" onclick="addPlayerTwo()" name="button">Player Two</button>
+    <button type="button" onclick= "reset()" name="button">Reset</button>
+  </body>
+</html>
