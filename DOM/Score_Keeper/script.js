@@ -34,12 +34,15 @@ function addPlayerTwo() {
     }
   }
 }
-function reset(){
+function resetNumbers(){
   scoreOne = scoreTwo = 0;
-  // scoreTwo = 0;
-
   document.querySelector("#first").textContent = scoreOne;
   document.querySelector("#second").textContent = scoreTwo;
+}
+function reset(){
+
+  // scoreTwo = 0;
+  resetNumbers();
   document.querySelector("#in").value = null;
   document.querySelector("h3").textContent = "Playing to: 5";
   document.querySelector("#first").style.color = "black";
@@ -48,6 +51,7 @@ function reset(){
 }
 function points()
 {
+  resetNumbers();
   wynik = document.querySelector("#in").value;
   game = wynik;
   document.querySelector("h3").textContent = "Playing to: "+game;
