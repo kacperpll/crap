@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="script.js"></script>
     <style media="screen">
       .green
       {
@@ -15,8 +14,9 @@
     <h1><span id="first">0</span> to <span id="second">0</span></h1>
     <h3>Playing to: 5</h3>
     <input type="number" oninput="points()" id="in" name="quantity" min="1" max="99">
-    <button type="button" onclick="addPlayerOne()" name="button">Player One</button>
-    <button type="button" onclick="addPlayerTwo()" name="button">Player Two</button>
-    <button type="button" onclick= "reset()" name="button">Reset</button>
+    <button type="button" id="cos1" name="button">Player One</button>
+    <button type="button" onclick="addPlayerTwo()"id="cos2" name="button">Player Two</button>
+    <button type="button" onclick= "reset()"id="cos3" name="button">Reset</button>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
