@@ -42,6 +42,9 @@ function reset(){
   document.querySelector("#second").textContent = scoreTwo;
   document.querySelector("#in").value = null;
   document.querySelector("h3").textContent = "Playing to: 5";
+  document.querySelector("#first").style.color = "black";
+  document.querySelector("#second").style.color = "black";
+
 }
 function points()
 {
