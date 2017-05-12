@@ -1,0 +1,72 @@
+body{
+  background: black;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.block{
+  border-radius: 35px;
+  background: green;
+  width: 30%;
+  padding-top: 30%;
+  float: left;
+  margin: 1.66%;
+  transition: background 1.5s;
+}
+.cos{
+  margin: 0 auto;
+  max-width: 600px;
+  height: 30px;
+  text-align: center;
+}
+#game{
+  padding-top: 40px;
+  margin: 0 auto;
+  max-width: 750px;
+}
+#kolor{
+  font-size: 200%;
+}
+
+.white{
+  background: white;
+  max-height: 30px;
+
+}
+h1{
+  padding: 40px 0;
+  color: white;
+  line-height: 0.98;
+  font-weight: normal;
+  background: rgb(0, 200, 255);
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}
+span{
+  text-transform: uppercase;
+}
+#stan{
+  color: rgb(0, 200, 255);
+  display: inline-block;
+  width: 20%;
+  font-weight: 600;
+}
+.selected {
+  background: rgb(0, 200, 255);
+  color: white;
+}
+button{
+  border: none;
+  background: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 100%;
+  color: rgb(0, 200, 255);
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 1.0s;
+}
+button:hover{
+  color: white;
+  background: rgb(0, 200, 255);
+}
