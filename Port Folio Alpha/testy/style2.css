@@ -1,151 +1,3 @@
-body{
-   padding:0;
-   margin:0;
-   top:0;
-   left:0;
-   width: 100%;
-   height: 100%;
-   font-family: 'Fira Sans', sans-serif;
-}
-
-button, input, optgroup, select, textarea
-{
-    color: white !important;
-}
-.firstBackground
-{
-  font-size: 4.6vw;
-  color: white;
-  text-align: center;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-  /*background-image: url("../img/galaxy.jpg");*/
-  background-image: url(https://media.giphy.com/media/kW6O6ozGQnqzm/giphy.gif);
-  background-size: contain;
-  line-height: 0.9;
-}
-.navbar-inverse
-{
-    background-color: transparent;
-    border-color: transparent;
-}
-.navbar-nav>li>a
-{
-    color: white !important;
-    font-size: 18px;
-}
-.navbar-toggle
-{
-    border-color: white !important;
-}
-
-.navbar-brand
-{
-    color: white !important;
-}
-.addNote
-{
-  text-align: center;
-  font-size: 1.6vw;
-  color: rgba(112, 112, 112, 1);
-}
-.proverb > #cudzy
-{
-  color: #996f30;
-}
-.about
-{
-  height: 47vh;
-  padding: 50px 0;
-  text-align: center;
-  font-size: 1.5vw;
-  color: black;
-  background-color: #E3E3E3;
-}
-
-.proverb
-{
-  position:relative;
-  font-family: 'Pacifico', cursive;
-  font-weight: lighter;
-  padding: 250px 10% 0 10%;
-  text-align: center;
-  line-height:1.3;
-}
-
-#proverb > span,#ani
-{
-  position:absolute;
-  top:0;
-  right:0;
-  width: 100%;
-  /*background-image: url("../img/galaxy.jpg");*/
-  background-image: url(https://media.giphy.com/media/kW6O6ozGQnqzm/giphy.gif);
-  background-size: contain;
-  background-attachment: fixed;
-  animation: pisz 4s linear;
-}
-
-.secondBackground
-{
-  /*background-image: url("../img/galaxy.jpg");*/
-  background-image: url(https://media.giphy.com/media/kW6O6ozGQnqzm/giphy.gif);
-  background-size: contain;
-  background-attachment: fixed;
-  width: 100%;
-  height: 53vh;
-}
-.thirdBackground
-{
-  background-image: url(https://media.giphy.com/media/kW6O6ozGQnqzm/giphy.gif);
-  background-size: contain;
-  background-attachment: fixed;
-  width: 100%;
-  height: 15vh;
-}
-
-@keyframes pisz
-{
-  from { height:105%;}
-  to { height:0;}
-}
-@keyframes znak
-{
-  0% { border-left-color:transparent; }
-  50% { border-left-color:transparent; }
-  100% { border-left-color:transparent; }
-}
-
-.container
-{
-    width: 100% !important;
-}
-.contact
-{
-  padding-top: 5vh;
-  background-color: #E3E3E3;
-  height: 45vh;
-}
-.navbar-toggle:hover {
-    background-color: black !important;
-}
-/*.mask{
-  position: absolute;
-  top: -1px;
-  right:1px;
-  width:85%;
-  height: 1px;
-  background-color:#fff;
-}*/
-/*.navbar-collapse {
--webkit-box-shadow: none;
-box-shadow: none;
-border-top:  1px solid #000;
-position:relative;
-margin: 0 ;
-}*/
-
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -222,7 +74,11 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
-
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+  color: #b3aca7;
+}
 
 header {
   position: relative;
@@ -234,19 +90,15 @@ header {
 
 #form {
   position: relative;
-  margin: 50px 10% 100px auto;
-  font-family: 'Lato', sans-serif;
-  background: #e2dedb;
-  color: #b3aca7;
-  flex:1;
+  width: 500px;
+  margin: 50px auto 100px auto;
 }
 
 input {
   font-family: 'Lato', sans-serif;
   font-size: 0.875em;
-  width: 100%;
+  width: 470px;
   height: 50px;
-  min-height: 25px;
   padding: 0px 15px 0px 15px;
 
   background: transparent;
@@ -268,9 +120,10 @@ input:hover {
 }
 
 textarea {
-  width: 100%;
+  width: 470px;
+  max-width: 470px;
   height: 110px;
-  max-height: 55px;
+  max-height: 110px;
   padding: 15px;
 
   background: transparent;
@@ -294,7 +147,7 @@ textarea:hover {
 }
 
 #submit {
-  width: 100%;
+  width: 502px;
 
   padding: 0;
   margin: -5px 0px 0px 0px;
@@ -312,16 +165,4 @@ textarea:hover {
 
 #submit:hover {
   color: #e2dedb;
-}
-
-.contactText
-{
-  font-size: 1.5em;
-  padding-top: 50px;
-  text-align: center;
-  flex: 2;
-}
-.contactBox
-{
-  display:flex;
 }
