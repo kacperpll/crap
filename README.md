@@ -1,5 +1,3 @@
 # front-end
 
-Some of my front-end projects/lessons from learning step by step
-
-Most interesting in DOM folder.
+Here is where I split my work and ideas with other things which i made with others ideas/help.
