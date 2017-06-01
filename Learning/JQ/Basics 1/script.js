@@ -13,9 +13,26 @@ var text = $(this).text();
 
 $("img").css("width", "250px");
 
-$("input[type=text]").keypress(function(event){
+$("input[type=text].first").keypress(function(event){
   if(event.which === 13)
   {
     $("input[type=text]").val("");
   }
+});
+$("h1").on("click", function()
+{
+  $(this).css("color", "purple");
+});
+$("input.second").on("keypress", function()
+{
+  console.log("pressed");
+});
+
+$("button").on("mouseenter", function()
+{
+  $(this).css("font-weight", "bold");
+});
+$("button").on("mouseleave", function()
+{
+  $(this).css("font-weight", "normal");
 });
