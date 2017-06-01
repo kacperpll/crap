@@ -32,6 +32,7 @@ $("button").on("mouseenter", function()
 {
   $(this).css("font-weight", "bold");
 });
+
 $("button").on("mouseleave", function()
 {
   $(this).css("font-weight", "normal");
