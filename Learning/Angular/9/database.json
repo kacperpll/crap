@@ -1,0 +1,16 @@
+{
+    "records": [
+        {
+          "Name":"Kacper",
+          "Age":"25"
+        },
+        {
+          "Name":"Marcin",
+          "Age":"14"
+        },
+        {
+          "Name":"Anonymus",
+          "Age":"???"
+        }
+    ]
+}

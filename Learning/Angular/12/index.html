@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Angular | Range Based Loops</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+    </script>
+    <script src="controller.js"></script>
+  </head>
+
+  <body ng-app="mainApp">
+    <!-- <div ng-controller="app">
+      <li ng-repeat="i in myRange">
+        {{i}}<br>
+      </li>
+    </div> -->
+
+    <div ng-controller="app2">
+      <li ng-repeat="i in range track by $index">
+        kacper<br>
+      </li>
+    </div>
+  </body>
+
+
+
+</html>

@@ -1,4 +1,4 @@
-# front-end
+# front end
 Bootstrap4
 
 Small website with a gallery using bootstrap with adding class "thumbnail" on all imgs.

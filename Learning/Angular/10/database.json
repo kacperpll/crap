@@ -1,0 +1,19 @@
+{
+    "records": [
+        {
+          "Name":"Kacper",
+          "Age":"25",
+          "Fav_color": "orange"
+        },
+        {
+          "Name":"Marcin",
+          "Age":"14",
+          "Fav_color": "black"
+        },
+        {
+          "Name":"Anonymus",
+          "Age":"???",
+          "Fav_color": "white"
+        }
+    ]
+}
