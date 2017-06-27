@@ -1,4 +1,5 @@
 # front end
+**magiczny tekst**
 <br>
 Angular step by step.
 <br>
