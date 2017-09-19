@@ -1,0 +1,77 @@
+$f: "footer";
+
+#{$f} {
+  content: "";
+  height: 136px;
+  width: 100%;
+  background: #fff;
+}
+
+.#{$f}__button {
+  margin: 31px 41px 0 41px;
+  width: auto;
+  height: 40px;
+}
+
+.#{$f}__button-contant {
+  width: 60%;
+  margin-left: 24px;
+  float: left;
+}
+.#{$f}__button-info {
+    float: left;
+    margin: 0 24px;
+    text-align: center;
+    h4 {
+      height: 18px;
+      color: #6f6f6f;
+      font-family: "Roboto Condensed";
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0.45px;
+    }
+    &:hover{
+      cursor: pointer;
+      h4 {
+        color: #7cc8e1;
+      }
+    }
+}
+.#{$f}__button-click {
+  display: flex;
+  float: left;
+  width: 159px;
+  height: 40px;
+  background-color: #065889;
+  justify-content: center;
+  h4 {
+    color: #7cc8e1;
+    font-size: 18px;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.45px;
+    height: 18px;
+  }
+  &:hover {
+    cursor: pointer;
+    h4 {
+      color: #e6e6e6;
+    }
+  }
+}
+
+.#{$f}__info {
+  float: right;
+  height: 18px;
+  text-transform: uppercase;
+  h4 {
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.45px;
+  }
+}
+.#{$f}__info-copyright {
+  font-weight: 700;
+}

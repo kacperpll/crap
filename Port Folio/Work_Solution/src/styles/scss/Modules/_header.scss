@@ -1,0 +1,136 @@
+$h: "header";
+
+.#{$h} {
+  height: 110px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin-top: -110px;
+}
+
+.#{$h}__logo {
+  flex: 3.3;
+  background-color: white;
+  display: flex;
+}
+.#{$h}__logo-big {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #00b2ec;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 12px;
+  img{
+    width: 48px;
+    height: 18px;
+    margin: 0 18px 0 50px;
+  }
+}
+
+.logo__word-first{
+  color: #00598e;
+  font-weight: 700;
+}
+.logo__word-second{
+  color: #00b2ec;
+  font-weight: 300;
+}
+
+.#{$h}__menu {
+  flex: 5.7;
+  display: flex;
+}
+.#{$h}__menu-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  &:hover{
+    cursor: pointer;
+    h2{
+      color: #00b2ec;
+    }
+  }
+  // &:nth-child(odd){
+  //   background-color: pink;
+  // }
+  h2{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: #2a2a2a;
+    font-family: "Roboto Condensed";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 12px;
+    height: 19px;
+    letter-spacing: 0.47px;
+    border-left: 1px solid #e3e4e7;;
+  }
+  &:nth-child(1){
+    h2{
+      border-left: none;
+    }
+  }
+}
+
+.#{$h}__other {
+  flex: 4;
+  background-color: white;
+  display: flex;
+}
+
+.#{$h}__other-links{
+  flex: 2;
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+}
+.#{$h}__link{
+  max-width: 44px;
+  display: flex;
+  margin: auto 1px;
+  flex: 1;
+}
+.#{$h}__link-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  border: 1px solid #b8b8b8;
+  color: #b8b8b8;
+  border-radius: 50%;
+  &:hover{
+    cursor: pointer;
+    background-color: #b8b8b8;
+    color: #fff;
+  }
+}
+.#{$h}__other-project{
+  background-color: #cf4b60;
+  flex: 1;
+  min-width: 198px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2{
+    height: 18px;
+    color: #ffffff;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.45px;
+  }
+  &:hover{
+    cursor: pointer;
+    background-color: #e40f31;
+    h2 {
+      color: #000;
+    }
+  }
+}
