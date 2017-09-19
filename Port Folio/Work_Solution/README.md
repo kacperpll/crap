@@ -1,4 +1,4 @@
 # WorkSolution
 
 
-Newer project which show my actuall approach to work as Front-End and usage of Scss.
+Newer project which show my actuall approach to work as Front-End, usage of Scss and beginnings with BEM methodology.
