@@ -1,0 +1,41 @@
+// @font-face {
+//     font-family: 'Barlow';
+//     src: url('../../fonts/Barlow/Barlow-Black.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-BlackItalic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-Bold.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-BoldItalic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-ExtraBold.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-ExtraBoldItalic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-ExtraLight.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-ExtraLightItalic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-Italic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-Light.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-LightItalic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-Medium.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-MediumItalic.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-Regular.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-SemiBold.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-Thin.ttf') format('ttf'),
+//     url('../../fonts/Barlow/Barlow-ThinItalic.ttf') format('ttf');
+// }
+@font-face {
+    font-family: 'Barlow - Black';
+    src: url('../../fonts/Barlow/Barlow-Black.ttf');
+    }
+@font-face {
+      font-family: 'Barlow';
+      src: url('../../fonts/Barlow/Barlow-Regular.ttf');
+    }
+@font-face {
+      font-family: 'Barlow - Medium';
+      src: url('../../fonts/Barlow/Barlow-Medium.ttf');
+    }
+//COLORS
+$gColor: white;
+//LOGO GRADIENT
+$logo_firstColor:#ff4354;
+$logo_secondColor:#9f031b;
+//NAV PADDING
+$navMargin: 20px;
+//NAVBAR
+$nav_fontSize: 11px;

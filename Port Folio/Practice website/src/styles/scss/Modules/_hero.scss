@@ -1,0 +1,88 @@
+$h: "hero";
+
+.#{$h} {
+  width: 100%;
+  height: 351px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+}
+.#{$h}-center{
+  max-width: 982px;
+  margin: 0 auto;
+  height: 100%;
+}
+.#{$h}__text{
+  margin-top: 66px;
+  margin-bottom: 62px;
+  h1{
+    height: 78px;
+    color: #222222;
+    font-family: "Bree Serif";
+    font-size: 82px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.#{$h}__button-text{
+  margin-bottom: 4px;
+  text-shadow: 1px 1px 0 #49f7ef;
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #21b3ac;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.#{$h}__button{
+  margin: 0 auto;
+  margin-top: 66px;
+  width: 298px;
+  height: 70px;
+  box-shadow: inset 0 -5px 0 #21b3ac;
+  background-color: #2de8df;
+  background-image: linear-gradient(to top, #2de8df 0%, #2bf2e8 100%);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  &:hover{
+    color: #21b3ac;
+    background-color: #2de8df;
+    box-shadow: inset 0 2px 5px #1f847f;  //zmiana z 1px na 2px z powodu nie dokładnego odwzorowania wersji graficznej z oryginalnymi parametrami
+    background-image: none;
+    .#{$h}__button-text{
+      text-shadow: 1px 1px 0 rgba(73, 247, 239, 0.4);
+      margin-bottom: 2px;
+    }
+  }
+}
+
+// ##########   For php task    ##########
+.#{$h}__text h1.h1__first {
+  color: blue;
+}
+.#{$h}__text h1.h1__second {
+  color: green;
+}
+
+
+// ##############   MEDIA   ###############
+
+@media (min-width:0px) and (max-width:924px){
+  .#{$h}{
+    height: auto;
+  }
+  .#{$h}-center{
+    padding: 62px 0;
+  }
+  .#{$h}__text {
+    margin-top: 0px;
+  }
+  .#{$h}__text h1 {
+    height: auto;
+  }
+}

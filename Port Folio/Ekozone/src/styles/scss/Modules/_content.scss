@@ -1,0 +1,43 @@
+$h: "content";
+
+.#{$h} {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &>div{
+    margin-bottom: 20px;
+  }
+}
+
+.#{$h}__oferta{
+  background-color: #d1d1d1;
+  height: auto;
+}
+.#{$h}__cennik{
+  background-color: gray;
+  height: auto;
+}
+.#{$h}__rekomendacje{
+  background-color: #d1d1d1;
+  height: 350px;
+}
+.#{$h}__rekomendacje-all{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-around;
+}
+.#{$h}__rekomendacje-box{
+  flex: 1;
+  max-width: 200px;
+  background-color: gray;
+  height: 100%;
+  min-height: 200px;
+}
+.#{$h}__text{
+  padding: 30px;
+}

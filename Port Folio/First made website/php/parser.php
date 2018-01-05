@@ -6,7 +6,7 @@
         $to = "kacper.duniewicz@gmail.com";
         $from = $e;
         $subject = 'Contact Form Website';
-        $message = 'Name:'.$n."<br>Email:" .$e. "<br>".$m;
+        $message = 'Name:'.$n."\n"."Email:" .$e."\n".$m;
         $headers = "From: $from\n";
         $headers .= "MIME-Version: 1.0\n";
         $headers .= "Content type: text; charset=iso-8859-1\n";

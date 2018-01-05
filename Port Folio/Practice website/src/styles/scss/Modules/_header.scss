@@ -1,0 +1,111 @@
+$h: "header";
+
+.#{$h} {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.#{$h}__contener{
+  width: 100%;
+  max-width: 943px;
+  margin: auto;
+  padding: 25px 2px 0 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.#{$h}__button{
+  display: flex;
+  flex: 1;
+  height: 42px;
+  cursor: pointer;
+  width: auto;
+  :nth-of-type(odd){
+  }
+}
+.#{$h}__text{
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 18px;
+  color: #000000;
+  font-size: 18px;
+  &:hover{
+      color: #e5e5e5;
+      border-bottom: 1px #2de8df solid;
+  }
+}
+
+.#{$h}__button-leftfirst,.#{$h}__button-leftsecond{
+  display: flex;
+  justify-content: flex-start;
+}
+.#{$h}__button-leftsecond{
+  padding-left: 8px;
+}
+.#{$h}__button-rightfirst,.#{$h}__button-rightsecond{
+  display: flex;
+  justify-content: flex-end;
+}
+.#{$h}__button-rightfirst{
+  padding-right: 9px;
+}
+
+.#{$h}__logo{
+  display: contents;
+  width: 120px;
+  height: 120px;
+  background-image: url('../../../img/logo.png');
+  background-image: url('../../img/logo.png');
+  background-image: url('../img/logo.png');
+  background-image: url('http://practice.local/src/img/logo.png');
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 40px;
+}
+
+// ##############   MEDIA   ###############
+
+@media (min-width:0px) and (max-width:400px){
+  .#{$h}{
+    height: auto;
+  }
+  .#{$h}__contener{
+    flex-wrap: wrap;
+    padding-top: 100px;
+  }
+  .#{$h}__logo{
+    top: 15px;
+    width: 80px;
+    height: 80px;
+  }
+  .#{$h}__button{
+    min-width: 100%;
+    &-leftsecond,
+    &-leftfirst,
+    &-rightfirst,
+    &-rightsecond{
+      padding: 0;
+      justify-content: center;
+    }
+  }
+}
+@media (min-width:401px) and (max-width: 650px){
+  .#{$h}{
+    height: auto;
+  }
+  .#{$h}__contener{
+    padding: 100px 20px 40px 20px;
+  }
+  .#{$h}__logo{
+    top: 20px;
+    width: 80px;
+    height: 80px;
+  }
+}

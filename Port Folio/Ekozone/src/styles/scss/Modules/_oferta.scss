@@ -1,0 +1,100 @@
+$h: "oferta";
+
+.#{$h} {
+  width: 100%;
+  background-color: #50d1ff;
+  min-height: 420px;
+}
+
+.#{$h}__content{
+  margin: 0 auto;
+  display: flex;
+}
+.#{$h}__text{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.#{$h}__text-message{
+  flex: 3;
+  text-align: left;
+  color: #415ba9;
+  max-width: 570px;
+  font-size: 18px;
+  font-family: 'Barlow - Medium';
+  padding: 40px 35px 40px 30px;
+  box-sizing: border-box;
+  p,ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+.#{$h}__text-title{
+  flex: 1;
+  max-width: 172px;
+  h2{
+    transform: rotate(-90deg);
+    font-size: 95px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    margin: 0;
+    margin-top: 185px;
+    margin-right: -95px;
+    display: block;
+  }
+}
+.#{$h}__photo{
+  width: 45%;
+  overflow: hidden;
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+  div{
+    width: 100%;
+    height: 100%;
+    background-image: url('http://frontekozone.local/src/img/ozone.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 63% 100%;
+    background-position-x: right;
+  }
+}
+
+@media (max-width:1100px) and (min-width: 901px){
+  .#{$h}__photo{
+    width: 45%;
+    overflow: hidden;
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    div{
+      background-size: 85% 100%;
+    }
+  }
+}
+
+@media (max-width:900px){
+  .#{$h}{
+    height: auto;
+    padding-bottom: 60px;
+  }
+  .#{$h}__photo{
+    display: none;
+  }
+}
+@media (max-width:650px){
+  .#{$h}__text{
+    display: block;
+  }
+  .#{$h}__text-title{
+    h2{
+      transform: none;
+      margin: 0;
+      @media(max-width: 400px){
+        font-size: 80px;
+      }
+    }
+  }
+}

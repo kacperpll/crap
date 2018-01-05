@@ -1,0 +1,177 @@
+$h: "header";
+
+.#{$h} {
+  position: relative;
+  height: auto;
+  min-height: 60vh;
+  width: 100%;
+  // background-image: url('/img/family.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  // z-index: -1;
+  &>img{
+    height: 770px;
+    width: 100%;
+    margin-top: -100px;
+  }
+  .image{
+    height: 670px;
+    width: 100%;
+    margin-top: 0px;
+    background-image: url('http://frontekozone.local/src/img/family2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(max-width: 770px){
+      height: 400px;
+      margin-top: 0px;
+    }
+  }
+}
+.#{$h}-white{
+  background-color: white;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.#{$h}__phone{
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  font-size: 20px;
+  z-index: 9999999;
+  font-style: italic;
+  color: #0b4791;
+  p{
+    span{
+      font-style: italic;
+    }
+  }
+  @media(max-width: 1170px){
+    top: -5px;
+    right: 20px;
+  }
+}
+.#{$h}__menu{
+  height: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow - Medium';
+  color: #0b4791;
+  font-size: 22px;
+  padding-top: 54px;
+}
+.#{$h}__button{
+  flex:1;
+  text-align: center;
+  padding: 5px;
+  line-height: 14px;
+  height: 16px;
+  cursor: pointer;
+  &:hover{
+    background-color: #00e9ff;
+  }
+}
+.#{$h}__button-left{
+  display: flex;
+  flex: 1;
+  margin-right: 90px;
+  margin-top: 4px;
+}
+.#{$h}__button-right{
+  display: flex;
+  flex: 1;
+  margin-left: 90px;
+  margin-top: 4px;
+}
+.#{$h}__logo{
+  width: 240px;
+  height: 120px;
+  background-color: transparent;
+  position: absolute;
+  text-align: center;
+  top: 19px;
+  right: calc(50% - 120px);
+  background-image:  url('http://frontekozone.local/src/img/logo.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 240px;
+  height: 120px;
+  background-color: transparent;
+  position: absolute;
+  text-align: center;
+  top: 19px;
+  right: calc(50% - 120px);
+  background-image: url('http://frontekozone.local/src/img/logo.png');
+  background-size: contain;
+  background-position: center;
+  background-position-y: 1px;
+  background-size: 9.8em;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 129px / 73px;
+  border: 2px white solid;
+  @media(max-width: 770px){
+    width: 156px;
+    height: 90px;
+    top: 16px;
+    right: calc(50% - 90px);
+
+    width: 156px;
+    height: 90px;
+    top: 16px;
+    right: calc(50% - 90px);
+    background-size: 6.5em;
+    background-position-y: 8px;
+  }
+}
+
+@media(max-width: 550px){
+  .#{$h}-white{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+  .#{$h}__menu{
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-between;
+    font-family: 'Barlow - Medium';
+    color: #0b4791;
+    font-size: 22px;
+    padding-top: 138px;
+  }
+  .#{$h}__button-left {
+    display: block;
+    flex: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .#{$h}__button-right{
+    display: block;
+    flex: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .#{$h}__logo {
+    width: 156px;
+    height: 90px;
+    top: 16px;
+    right: calc(50% - 75px);
+  }
+  .#{$h}__button{
+    flex: none;
+  }
+  .#{$h}__phone {
+    top: 90px;
+    right: calc(50% - 60px);
+  }
+}

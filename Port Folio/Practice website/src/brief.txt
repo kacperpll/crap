@@ -1,0 +1,32 @@
+﻿Zadania Html/CSS
+
+HTML.1. Zakończony projekt, po uruchomieniu w przeglądarce, ma wyglądać dokładnie jak na załączonym podglądzie png.
+
+Zadania JavaScript z jQuery:
+
+JS.1. Zaimplementuj smooth scroll po kliknięciu "do góry".
+
+JS.2. Po kliknięciu w "czytaj więcej" ma się pojawić więcej tekstu w danej kolumnie.
+
+JS.3. Po kliknięciu w "push the button" każde słowo "ipsum" w kolumnach ma zmienić kolor na czerwony na 3 sekundy.
+
+
+Zadania PHP:
+
+PHP.1. Strona ma mieć rozszerzenie php zamiast html. Zmienne GET w urlu (podaj te zmienne w mailu) mają zmieniać stronę (po przeładowaniu):
+- inny tekst nad "push the button",
+- inny kolor tego samego tekstu nad "push the button".
+
+PHP.2. Napisz skrypt obsługi formularza, wedle następujących wytycznych:
+- skrypt ma się znajdować w osobnym pliku post.php,
+- skrypt ma sprawdzać, czy zostały do niego przesłane dane (metoda POST)
+-- jeśli nie zostały wysłane dane, wyświetla informację "Brak danych do wyświetlenia",
+-- jeśli zostały przesłane dane z formularza:
+--- skrypt wyświetla komunikat "Dziękujemy za wysłanie formularza z następującymi danymi:",
+--- skrypt wywołuje napisaną wcześniej funkcję showFormData, która ma za zadanie wyświetlić wszystkie pola formularza (posiadające atrybut name) w 
+formacie "Label: value", gdzie Label to wartość atrybutu name, a value to wartość odpowiedniego pola,
+- napisz funkcję showFormData w taki sposób, aby nie było konieczności jej modyfikowania po dodaniu nowego pola do formularza w kodzie html.
+
+
+Zadanie AJAX:
+Napisz kod JS (z jQuery) który wysyła formularz bez przeładowania strony (AJAX) i wyświetla w jego miejsce komunikaty, o których mowa w zadaniu PHP.2.

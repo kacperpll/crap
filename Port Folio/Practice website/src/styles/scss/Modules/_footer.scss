@@ -1,0 +1,126 @@
+$f: "footer";
+
+.#{$f} {
+  height: 162px;
+  width: 100%;
+  background: black;
+}
+.#{$f}__content {
+  max-width: 982px;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+}
+.#{$f}__navigation, .#{$f}__links, .#{$f}__copyright {
+  flex: 1;
+}
+.#{$f}__navigation{
+  margin-top: 38px;
+  margin-left: 21px;
+}
+.#{$f}__nav {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  width: 50%;
+  float: left;
+}
+.#{$f}__nav:nth-of-type(even) {
+  text-align: right;
+  padding-right: 19px;
+}
+.#{$f}__links{
+}
+.#{$f}__icons{
+  margin: 40px 96px 0 79px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.#{$f}__icons-first{
+  background-image: url('http://practice.local/src/img/twitter.png');
+  background-repeat: no-repeat;
+  width: 53px;
+  height: 52px;
+  margin-right: 15px;
+}
+.#{$f}__icons-second{
+  background-image: url('http://practice.local/src/img/facebook.png');
+  background-repeat: no-repeat;
+  width: 53px;
+  height: 52px;
+  margin-left: 15px;
+}
+.#{$f}__copyright{
+}
+
+.#{$f}__copyright-text{
+  margin: 54px 0 0 24px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 10px;
+}
+
+.#{$f}__copyright-text p{
+  margin: 0;
+  padding: 0;
+}
+
+// ##############   MEDIA   ###############
+
+@media (min-width:623px) and (max-width:750px){
+  .#{$f}__nav{
+    min-width: 105px;
+    &:nth-of-type(even){
+      text-align: left;
+    }
+  }
+}
+@media (min-width:0px) and (max-width:622px){
+  .#{$f}{
+    height: auto;
+  }
+  .#{$f}__content{
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .#{$f}__nav{
+    min-width: 105px;
+    &:nth-of-type(even){
+      text-align: left;
+      padding-right: 0px;
+      padding-left: 35px;
+    }
+  }
+  .#{$f}__links{
+    order: 2;
+    width: 100%;
+    min-width: 100%;
+  }
+  .#{$f}__navigation{
+    order: 1;
+    max-width: 250px;
+    padding-top: 20px;
+    margin: 0 auto;
+
+  }
+  .#{$f}__icons{
+    max-width: 160px;
+    padding-top: 28px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+  }
+  .#{$f}__copyright{
+    min-width: 100%;
+    order: 3;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .#{$f}__copyright-text{
+    margin-top: 20px;
+  }
+}

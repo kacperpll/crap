@@ -1,0 +1,90 @@
+$h: "cennik";
+
+.#{$h} {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  height: auto;
+  text-align: center;
+  color: #415ba9;
+}
+
+.#{$h}__content{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+.#{$h}__text{
+  width: 1170px;
+  margin: 0 auto;
+}
+.#{$h}__text-title{
+  h2{
+    color: #415ba9;
+    font-size: 80px;
+    font-family: "Barlow - Black";
+    margin: 35px 20px 20px 20px;
+  }
+  p{
+    max-width: 620px;
+    margin: 0 auto;
+    font-family: "Barlow - Medium";
+    font-size: 18px;
+  }
+}
+.#{$h}__items{
+  padding-top: 50px;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.#{$h}__item{
+  width: 250px;
+  height: 250px;
+  border: 1px solid #415ba9;
+  border-radius: 125px;
+  margin: 5px;
+  margin-bottom: 15px;
+  p{
+    margin-top: 30px;
+    font-family: 'Barlow - Medium';
+    font-size: 18px;
+  }
+}
+.#{$h}__item-logo{
+  width: 74px;
+  height: 74px;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  &.first{
+    background-image: url('http://frontekozone.local/src/img/logo1.png');
+  }
+  &.second{
+    background-image: url('http://frontekozone.local/src/img/logo2.png');
+  }
+  &.third{
+    background-image: url('http://frontekozone.local/src/img/logo3.png');
+  }
+}
+.#{$h}__final{
+  // max-width: 1170px;
+  // margin: 0 auto;
+  background-color: #415ba9;
+  color: white;
+}
+.#{$h}__final-text{
+  max-width: 780px;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'Barlow - Medium';
+  p:nth-of-type(2){
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,117 @@
+Praca jest pisana z wykorzystaniem Gulp'a, Browsersync'a oraz stylowana z użyciem SCSS'a.
+
+
+Front:						START
+
+Czysty Front ze stylami (bez rwd):
+
+1.Początek pracy (szkielet+header)
+	- Stworzenie początkowego szkieletu z wymaganymi sekcjami: header,hero,content,contact,footer oraz podstawowymi linkami
+	- Stworzenie całego headera ze stylami i hoverami, dokładne ułożenie elementów w headerze, wykorzystanie flexboxa
+Czas pracy około 1h 10m - 1h 30m
+
+2.Druga część (Hero)
+	- Stworzenie części Hero wraz z hoverami i delikatną poprawką wartości z wzoru graficznego
+Czas pracy około 0h 50m - 1h 10m
+
+3.Trzecia część (Content)
+	- Stworzenie trzech kolumn pod content nałożenie odpowiednich klas dla obrazka
+	- Kilka poprawek z wyglądem tekstu, zauważony brak zawijania się go, użyty hyphens:manual i ostawione łamanie tekstu w html`u
+Czas pracy +/- 1h 20m
+(pod chrome hyphens:auto nie działa - wymaga użycia jsów, w tym przypadku postanowiłem nie używać js`a)
+
+4. Czwarta część (footer)
+	- Najprostsza część, oparcie się o flexa do stworzenia trzech kolumn, użycie margin do ułożenia elementów
+	- Uzupełnienie kolumn odpowiednim contentem
+Czas pracu +/- 30m
+
+5. Ostatnia część z fronta (Contact)
+	- Użycie trzech inputów oraz textarea, skopiowanie wcześniej ostylowanego przycisku do użycia w "send message"
+	- Ułożenie przycisku "back to top" z użyciem position:absolute
+Czas pracy +/- 1h
+
+Całkowity czas pracy: około 5h - 7h. (ciężko mi podać konkretny czas, ale starałem się sprawdzać zegarek przy wszystkich etapach pracy)
+
+Podczas stylowaniu starałem się używać metodologi BEM(block__element-modification) przy nazywaniu klas w danych sekcjach.
+Każda sekcja jest stylowana w oddzielnym pliku scss.
+Po zakończeniu prac z użyciem psd zostały naniesione poprawki z użyciem wtyczki do chrome PixelPerfect.
+
+Front:						END
+############################################################################
+############################################################################
+Javascript:				START
+
+1. Zaimplementowanie SmoothScrolla
+	- Proste zadanie, zrobione w kilka minut
+
+2. Rozwijanie dodatkowego tekstu
+	- Sprawdzałem kilka metod, ale uznałem że najlepsza będzie z użyciem slideToggle
+	- Dodatkowo ustawiam na sztywno wysokość każdej z kolumn na początku, aby wszystkie "read more" nie przesuwały się razem po kliknięciu
+któregoś z nich
+Czas pracy: około 1h (większość stracona na testowanie możliwych rozwiązań)
+
+3. Zmiana koloru tekstu "ipsum"
+	- Początkowo obrałem złą drogę, ponieważ nie byłem pewny czy mogę w dowolny sposób wpływać na tekst (chodzi o dodawanie <span>)
+udało mi się zamieniać ipsum na <span style='background-color:red;'>ipsum</span> przy pomocy funkcji replace, ale zrezygnowałem z tego
+rozwiązania. To rozwiązanie zajęło mi trochę czasu ale tylko dlatego że chciałem to zrobić bez wcześniejszej ingerencji w htmla.
+	- Przy użyciu taga span,jednej klasy, prostej animacji oraz funkcji setTimeout i toggleClass, szybko uzyskałem porządany efekt.
+
+Czas pracy:
+	Złe rozwiązanie(za dużo w JSie): 1h 10m
+	Dobre rozwiązanie: 15m - 20m
+
+Całkowity czas pracy: około 2h 30m - 3h
+
+Javascript:				END
+############################################################################
+############################################################################
+PHP:							START
+
+Zadanie 1:
+-	1. Zmiana rozszerzenia na .php
+		- Głównym problemem był Browsersync, nigdy nie używałem go na index.php, chwilę zajęło znalezienie informacji. Stworzenie virtualhosta
+		oraz przekierowanie w gulpie w browsersync na proxy z VH, dodałem w przekierowaniu /src, aby włączał się od razu index po włączeniu gulpa.
+		- Prostszym problemem była zmiana ścieżek wszystkich plików, aby były poprawnie ładowane, konkretnie dopisek 'http://chop.local/src/...'
+- 2. Stworzenie if'ów zmieniających napis, tego typu zadanie również robiłem pierwszy raz po kilku minutach znalazłem rozwiązanie problemu z
+		błędami w warunku if'a.
+		ZMIENNE GET:
+			- "first"
+			- "second"
+			np. "http://practice.local/src/?first" (oczywiście jeśli Państwa vh będzie miał taką samą nazwę)
+
+Czas pracy: 1h 20m - 1h 50m
+
+Zadanie 2:
+- 1. Stworzenie pliku post.php, dodanie warunku isset($_POST)
+
+- 2. Oparłem się o wcześniej stworzony już skrypt, który pisałem do swojej pierwszej strony na portfolio(robiłem go z jednym z tutoriali).
+	Jako, że wcześniej nie zagłębiałem się za bardzo w to jak działa to czas spędzony nad tym zadaniem był dość długi. Zasade działania skryptu rozumiem.
+	Pobieranie wartości z inputów (w tym przypadku po id) otwarcie pliku post.php i w nim sprawdzenie metodą !empty($_POST['coś']) czy istnieje.
+	Jeśli wszystkie warunki się zgadzają otrzymujemy echo "success" które w js'ie w if'ie sprawdzamy za pomocą responseText.
+	W przypadku nie spełnienia warunków tworzy się echo "ERROR" i wyświetla się informacja w alert'cie "Brak danych do wyświetlenia"
+
+Pierwsza wersja była stworzona w V JS i do tego momentu na zadanie musiałem przeznaczyć
+około 2-3h (chociaż mogło to być nawet dłużej)
+W tym momeńcie działa wszystko poza nie stworzoną jeszcze funkcją showFormData.
+
+- 3. Stworzenie funkcji showFormData do drukowania wpisanych danych(drukowane w alert'cie).
+Czas pracy: 15m - 20m
+
+- 4. Zamiana JS na JQ przy ajax'ie, przy nie wypełnieniu wszystkich wymaganych pól drukowany jest w logu error(400)
+	Miałem dwa podejścia do przerobienia kodu na JQ, uznałem że pierwszy jest nie do końca taki jak powinien, brak użytych $.ajax czy też .done/.fail
+	druga forma wydaje mi się czytelniejsza.
+Czas pracy: 1h - 1h 20m
+
+PHP:							END
+############################################################################
+############################################################################
+Poprawki:					START
+
+Niewielkie zmiany przy rwd:
+- 1. Pokolei sprawdzone wszystkie sekcje i naniesienie niezbędnych zmian od szerokości projektu do szerokości 320px
+Czas pracy: około 1h - 1h 30m
+
+Poprawki:					END
+
+
+Całkowity czas pracy nad projektem z poprawkami: około 12h.

@@ -1,0 +1,39 @@
+$f: "footer";
+
+.#{$f} {
+  height: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  background-color: #50d1ff;
+  padding-bottom: 1px;
+  padding-top: 30px;
+  font-family: 'Barlow - Medium';
+}
+.#{$f}__content{
+  margin-bottom: 20px;
+}
+.#{$f}__contact{
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+.#{$f}__copyright {
+    width: 100%;
+    color: #f6f6f6;
+    padding-top: 40px;
+}
+.#{$f}__copyright-text{
+  // margin-top: 50px;
+  p {
+
+  }
+}
