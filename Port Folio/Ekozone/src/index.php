@@ -15,11 +15,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Start Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://frontekozone.local/src/styles/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/src/styles/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link rel="stylesheet" href="http://frontekozone.local/src/lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/src/lib/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
     <!-- End Stylsheets -->
 </head>
@@ -220,35 +220,35 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="rekomendacje__all-box">
-                <img src="http://frontekozone.local/src/img/logo1.png" alt="image slide">
+                <img src="/src/img/logo1.png" alt="image slide">
                 <p>rekomendacja rekomendacja rekomendacja rekomendacja rekomendacja
                   rekomendacja rekomendacja rekomendacja</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rekomendacje__all-box">
-                <img src="http://frontekozone.local/src/img/logo1.png" alt="image slide">
+                <img src="/src/img/logo1.png" alt="image slide">
                 <p>rekomendacja rekomendacja rekomendacja rekomendacja rekomendacja
                   rekomendacja rekomendacja rekomendacja</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rekomendacje__all-box">
-                <img src="http://frontekozone.local/src/img/logo1.png" alt="image slide">
+                <img src="/src/img/logo1.png" alt="image slide">
                 <p>rekomendacja rekomendacja rekomendacja rekomendacja rekomendacja
                   rekomendacja rekomendacja rekomendacja</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rekomendacje__all-box">
-                <img src="http://frontekozone.local/src/img/logo1.png" alt="image slide">
+                <img src="/src/img/logo1.png" alt="image slide">
                 <p>rekomendacja rekomendacja rekomendacja rekomendacja rekomendacja
                   rekomendacja rekomendacja rekomendacja</p>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="rekomendacje__all-box">
-                <img src="http://frontekozone.local/src/img/logo1.png" alt="image slide">
+                <img src="/src/img/logo1.png" alt="image slide">
                 <p>rekomendacja rekomendacja rekomendacja rekomendacja
                   rekomendacja rekomendacja rekomendacja rekomendacja</p>
               </div>
@@ -294,8 +294,8 @@
       crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-    <script src="http://frontekozone.local/src/scripts/script.js" type="text/javascript"></script>
-    <script src="http://frontekozone.local/src/scripts/email.js" type="text/javascript"></script>
+    <script src="/src/scripts/script.js" type="text/javascript"></script>
+    <script src="/src/scripts/email.js" type="text/javascript"></script>
 
 <!-- End Scripts -->
 

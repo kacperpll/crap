@@ -63,13 +63,13 @@ $h: "cennik";
   background-position: center;
   background-size: contain;
   &.first{
-    background-image: url('http://frontekozone.local/src/img/logo1.png');
+    background-image: url('/src/img/logo1.png');
   }
   &.second{
-    background-image: url('http://frontekozone.local/src/img/logo2.png');
+    background-image: url('/src/img/logo2.png');
   }
   &.third{
-    background-image: url('http://frontekozone.local/src/img/logo3.png');
+    background-image: url('/src/img/logo3.png');
   }
 }
 .#{$h}__final{

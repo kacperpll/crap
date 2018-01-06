@@ -468,11 +468,11 @@ body {
   background-position: center;
   background-size: contain; }
   .cennik__item-logo.first {
-    background-image: url("http://frontekozone.local/src/img/logo1.png"); }
+    background-image: url("/src/img/logo1.png"); }
   .cennik__item-logo.second {
-    background-image: url("http://frontekozone.local/src/img/logo2.png"); }
+    background-image: url("/src/img/logo2.png"); }
   .cennik__item-logo.third {
-    background-image: url("http://frontekozone.local/src/img/logo3.png"); }
+    background-image: url("/src/img/logo3.png"); }
 
 .cennik__final {
   background-color: #415ba9;
@@ -572,7 +572,7 @@ body {
     height: 670px;
     width: 100%;
     margin-top: 0px;
-    background-image: url("http://frontekozone.local/src/img/family2.jpg");
+    background-image: url("/src/img/family2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
@@ -643,7 +643,7 @@ body {
   text-align: center;
   top: 19px;
   right: calc(50% - 120px);
-  background-image: url("http://frontekozone.local/src/img/logo.png");
+  background-image: url("/src/img/logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -654,7 +654,7 @@ body {
   text-align: center;
   top: 19px;
   right: calc(50% - 120px);
-  background-image: url("http://frontekozone.local/src/img/logo.png");
+  background-image: url("/src/img/logo.png");
   background-size: contain;
   background-position: center;
   background-position-y: 1px;
@@ -953,7 +953,7 @@ body {
   .oferta__photo div {
     width: 100%;
     height: 100%;
-    background-image: url("http://frontekozone.local/src/img/ozone.jpg");
+    background-image: url("/src/img/ozone.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 63% 100%;
