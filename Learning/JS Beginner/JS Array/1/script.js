@@ -1,4 +1,4 @@
-var option = prompt("What would you like to do");
+var option = prompt("What would you like to do? Don`t know yet than \"quit\" ");
 var todos = [];
 while (option !== "quit")
 {
